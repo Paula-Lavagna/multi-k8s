@@ -1,6 +1,6 @@
 docker build -t paulalavagna/k8s-client:latest -t paulalavagna/k8s-client:$SHA -f ./client/Dockerfile ./client
 docker build -t paulalavagna/k8s-server:latest -t paulalavagna/k8s-server:$SHA -f ./server/Dockerfile ./server
-docker build -t paulalavagna/k8s-worker:latest -t paulalavagna/k8s-worker:$SHA -f ./workekr/Dockerfile ./worker
+docker build -t paulalavagna/k8s-worker:latest -t paulalavagna/k8s-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push paulalavagna/k8s-client:latest
 docker push paulalavagna/k8s-server:latest
 docker push paulalavagna/k8s-worker:latest
